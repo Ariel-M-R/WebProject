@@ -1,0 +1,539 @@
+{
+  "id": "ece4a3f0-579a-4ce3-81a5-b885c681854d",
+  "version": "2.0",
+  "name": "ProjectOrangeHRM Example",
+  "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "tests": [
+    {
+      "id": "c79e45e9-fecc-4fba-8f96-9fed6e960b9f",
+      "name": "Login with valid user",
+      "commands": [
+        {
+          "id": "cc2994b2-9f9a-4f2e-978c-470f6220fcd3",
+          "comment": "",
+          "command": "open",
+          "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "01e1984d-f9d5-41ce-82bb-88ea30b3b325",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1920x1040",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ffcd9485-467a-4cc5-81d2-465825ecfe31",
+          "comment": "",
+          "command": "click",
+          "target": "name=username",
+          "targets": [
+            [
+              "name=username",
+              "name"
+            ],
+            [
+              "css=.oxd-input--focus",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@name='username']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "3fe2e92d-e462-4e18-bea6-796ee8ad3fa2",
+          "comment": "",
+          "command": "type",
+          "target": "name=username",
+          "targets": [
+            [
+              "name=username",
+              "name"
+            ],
+            [
+              "css=.oxd-input--focus",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@name='username']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "admin"
+        },
+        {
+          "id": "efaed779-d338-4fc9-a07d-ab4e54f0b633",
+          "comment": "",
+          "command": "click",
+          "target": "name=password",
+          "targets": [
+            [
+              "name=password",
+              "name"
+            ],
+            [
+              "css=.oxd-input--focus",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@name='password']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div/div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "52058fbc-85a2-4bb6-8b08-fc391b45e9c1",
+          "comment": "",
+          "command": "type",
+          "target": "name=password",
+          "targets": [
+            [
+              "name=password",
+              "name"
+            ],
+            [
+              "css=.oxd-input--focus",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@name='password']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div/div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "admin123"
+        },
+        {
+          "id": "4eb952e6-c930-4f47-b887-e0e3c7c241c8",
+          "comment": "",
+          "command": "sendKeys",
+          "target": "name=password",
+          "targets": [
+            [
+              "name=password",
+              "name"
+            ],
+            [
+              "css=.oxd-input--focus",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@name='password']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div/div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "${KEY_ENTER}"
+        }
+      ]
+    },
+    {
+      "id": "142e4703-18a0-42a5-afbf-9800af052689",
+      "name": "Clock In ",
+      "commands": [
+        {
+          "id": "63d6913b-67ac-41fc-8954-3b5a8baa3dd0",
+          "comment": "",
+          "command": "open",
+          "target": "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2feb5648-1abf-4e82-8b43-92b266946507",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1920x1040",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "57069598-b93a-43a6-9ead-ed19544b6c07",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Time",
+          "targets": [
+            [
+              "linkText=Time",
+              "linkText"
+            ],
+            [
+              "css=.oxd-main-menu-item-wrapper:nth-child(4) > .oxd-main-menu-item",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/aside/nav/div[2]/ul/li[4]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, '/web/index.php/time/viewTimeModule')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[4]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Time')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "df82ee3c-8ed7-40cb-a5aa-a33c8ffa9583",
+          "comment": "",
+          "command": "click",
+          "target": "css=.oxd-topbar-body-nav-tab:nth-child(2) > .oxd-topbar-body-nav-tab-item",
+          "targets": [
+            [
+              "css=.oxd-topbar-body-nav-tab:nth-child(2) > .oxd-topbar-body-nav-tab-item",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/header/div[2]/nav/ul/li[2]/span",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//li[2]/span",
+              "xpath:position"
+            ],
+            [
+              "xpath=//span[contains(.,'Attendance ')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4b3ea57c-706f-4709-855d-8d8e1a8f8586",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Punch In/Out",
+          "targets": [
+            [
+              "linkText=Punch In/Out",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(2) > .oxd-topbar-body-nav-tab-link",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Punch In/Out')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/header/div[2]/nav/ul/li[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '#')])[2]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/ul/li[2]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Punch In/Out')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "054dfd2f-6eeb-408e-bed6-c5b74334d567",
+          "comment": "",
+          "command": "click",
+          "target": "css=.oxd-button",
+          "targets": [
+            [
+              "css=.oxd-button",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@type='submit']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/form/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[3]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'In')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "ce90beb0-2019-4af8-9d2a-331a35fc0ad1",
+      "name": "Clock Out And Logout",
+      "commands": [
+        {
+          "id": "509fa19a-a5dd-42fa-a0ce-5db43525760e",
+          "comment": "",
+          "command": "open",
+          "target": "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dd5a93d7-c9b0-4b6d-8715-fd4cdb55c127",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1920x1040",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "67ccfa9a-a607-45e8-98ec-ea36af944428",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Time",
+          "targets": [
+            [
+              "linkText=Time",
+              "linkText"
+            ],
+            [
+              "css=.oxd-main-menu-item-wrapper:nth-child(4) > .oxd-main-menu-item",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/aside/nav/div[2]/ul/li[4]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, '/web/index.php/time/viewTimeModule')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[4]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Time')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "88264f37-c9b7-4f55-8feb-c9cf1aadc704",
+          "comment": "",
+          "command": "click",
+          "target": "css=.oxd-topbar-body-nav-tab:nth-child(2) > .oxd-topbar-body-nav-tab-item",
+          "targets": [
+            [
+              "css=.oxd-topbar-body-nav-tab:nth-child(2) > .oxd-topbar-body-nav-tab-item",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/header/div[2]/nav/ul/li[2]/span",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//li[2]/span",
+              "xpath:position"
+            ],
+            [
+              "xpath=//span[contains(.,'Attendance ')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "41711c0f-1499-4231-86d4-946caf7f0a90",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Punch In/Out",
+          "targets": [
+            [
+              "linkText=Punch In/Out",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(2) > .oxd-topbar-body-nav-tab-link",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Punch In/Out')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/header/div[2]/nav/ul/li[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '#')])[2]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/ul/li[2]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Punch In/Out')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9370341d-e00f-4900-9e62-7a8812680b5f",
+          "comment": "",
+          "command": "click",
+          "target": "css=.oxd-button",
+          "targets": [
+            [
+              "css=.oxd-button",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@type='submit']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/form/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[3]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Out')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8c3c5bfb-3f03-436c-9064-7d18283c85cf",
+          "comment": "",
+          "command": "click",
+          "target": "css=.bi-caret-down-fill",
+          "targets": [
+            [
+              "css=.bi-caret-down-fill",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/header/div/div[3]/ul/li/span/i",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span/i",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "47dbddac-e173-4c7e-836e-8c4647741c67",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logout",
+          "targets": [
+            [
+              "linkText=Logout",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(4) > .oxd-userdropdown-link",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logout')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='app']/div/div/header/div/div[3]/ul/li/ul/li[4]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, '/web/index.php/auth/logout')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li/ul/li[4]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logout')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "e8bd9f17-bfeb-4a4f-978a-a94a606eac17",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": []
+    }
+  ],
+  "urls": [
+    "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+  ],
+  "plugins": []
+}
