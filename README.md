@@ -40,6 +40,3 @@ Other Skills
 •	Advanced SQL for QA
 🎯 Career Objective
 To leverage my experience in data accuracy and process validation, combined with my software testing knowledge, to contribute to delivering reliable, high-quality software products while continuously growing as a QA professional.
-📫 Connect With Me
-•	LinkedIn: 
-•	Email: arielmercado01224@gmail.com
